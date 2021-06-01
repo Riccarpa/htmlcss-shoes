@@ -1,0 +1,93 @@
+/* reset */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0%;
+}
+
+
+/* utils */
+
+body {
+    font-family: 'Rubik Mono One', sans-serif;
+    text-align: center;
+    height: 100vh;
+}
+
+
+/* body*/
+
+.navigator {
+    position: fixed;
+    z-index: 1;
+    right: 10px;
+    top: 20px;
+}
+
+.navigator li {
+    list-style-type: none;
+    display: inline;
+}
+
+.navigator a {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+li:hover a {
+    background-color: teal;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+#red {
+    background-color: red;
+    color: green;
+    position: relative;
+}
+
+#green {
+    background-color: green;
+    color: yellow;
+    position: relative;
+}
+
+#yellow {
+    background-color: yellow;
+    color: red;
+    position: relative;
+}
+
+.model {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+}
+
+.model img {
+    max-width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.model h1 {
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+}
